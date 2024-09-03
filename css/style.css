@@ -1,0 +1,238 @@
+nav{
+    background-color: #E8ECF8;
+}
+nav .navbar-nav li{
+    padding: 20px;
+}
+nav .navbar-nav li a{
+    font-size: 20px;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: #4270FF !important;
+}
+.navbar-light .navbar-nav .nav-item {
+    color: #000;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #4270FF;
+}
+nav .button-info{
+    display: flex;
+    gap: 20px;
+}
+nav .button-info button{
+    border: none;
+    background: transparent;
+}
+nav .button-info button a{
+    text-decoration: none;
+    font-size: 20px;
+}
+nav .button-info button.regi{
+    padding: 5px 15px !important;
+    border-radius: 15px ;
+    background-color: #fff;
+}
+nav .button-info button.regi a{
+    color: #000;
+}
+.navbar-toggler svg {
+    color: #000;
+    font-size: 30px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    z-index: 4;
+    position: relative;
+    margin-bottom: 0px;
+}
+@media (max-width: 991px) {
+    .navbar-collapse.collapse.show {
+        overflow-y: auto;
+        text-align: center;
+        height: 60vh;
+        -webkit-overflow-scrolling: touch;
+    }
+    nav .button-info{
+        display: flex;
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/*------------end navbar ----------------*/
+/*--------- start landing ------------------*/
+.landing{
+    background-color: #E8ECF8;
+    padding: 80px;
+}
+.landing .log-button {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+.landing .app-logo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.landing .log-button .logo-text a{
+    text-decoration: none;
+}
+.landing .log-button .logo-text span {
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+}
+.landing .log-button .logo-text p {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+.landing form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+}
+
+.form-control {
+    /* display: block; */
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #DFE6F9 !important;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.form-check-input {
+    width: 1em;
+    height: 1em;
+    margin-top: .25em;
+    vertical-align: top;
+    background-color: #000 !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, .25);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+}
+.landing form .form-info{
+    display: flex;
+    justify-content: space-between;
+}
+.landing form .form-info .form-text a{
+    text-decoration: none;
+    color: #000;
+}
+.landing .title p{
+    position: relative;
+    display: inline-block; /* Allows positioning of pseudo-elements */
+    padding: 0 10px; /* Add some padding to the text */
+}
+.landing .title p::before{
+    content: '';
+    position: absolute;
+    height: 2px; /* Thickness of the underline */
+    background-color: #000; /* Color of the underline */
+    width: 50%; /* Full width */
+    left: -70px;
+    top: 11px;
+    bottom: 0;
+}
+.landing .title p::after{
+    content: '';
+    position: absolute;
+    height: 2px; /* Thickness of the underline */
+    background-color: #000; /* Color of the underline */
+    width: 50%; /* Full width */
+    right: -70px;
+    top: 11px;
+    bottom: 0;
+}
+.social-media-links {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.social-link {
+    color: #333; /* Default icon color */
+    text-decoration: none;
+    font-size: 24px; /* Size of the icons */
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+.social-media-links a svg{
+    background: #DDE2F0;
+    padding: 20px 25px;
+    border-radius: 10px;
+}
+.social-media-links a svg:hover{
+    background-color: none !important;
+}
+@media (max-width: 991px) {
+    .landing .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .landing .image img{
+        width: 375px;
+    }
+    .landing .log-button{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .landing .log-text{
+        align-items: center;
+    }
+    .landing .app-logo {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        padding: 0px 10px;
+        background-color: #fff;
+        border-radius: 20px;
+    }
+    .landing form .form-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .social-media-links {
+        display: flex;
+        justify-content: center;
+    }
+    .social-media-links a svg {
+        background: #DDE2F0;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+}
+/*---------- end landing ------------------*/
